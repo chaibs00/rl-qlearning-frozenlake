@@ -84,13 +84,19 @@ In FrozenLake, setting `is_slippery=True` introduces uncertainty into movement. 
 
 We use the following reward configuration:
 
+<div align="center">
+
 | Event | Reward |
 |---|---:|
 | Reach the goal (G) | +1 |
 | Fall into a hole (H) | 0 |
 | Move onto a frozen tile (F) | 0 |
 
-An episode terminates when the agent reaches either the goal or a hole.
+</div>
+
+An episode terminates when :
+- The agent reaches the **goal $G$**.
+- The agent reaches a **hole $H$**.
 
 <br>
 
